@@ -8,6 +8,7 @@ module.exports = {
       current: "currentColor",
       black: "#1f1f1f",
       white: "#ffffff",
+      gray: "#666",
     },
   },
   plugins: [],

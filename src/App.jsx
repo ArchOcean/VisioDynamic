@@ -3,8 +3,10 @@ import { BiHomeAlt, BiBook, BiCog, BiMeteor } from "react-icons/bi";
 
 import { Canvas } from "./components/canvas";
 import { Form } from "./components/Form";
+
 import "./index.css";
 import Icon from "./components/icon";
+import Courses from "./components/Courses";
 
 function App() {
   return (
@@ -39,12 +41,14 @@ function App() {
         </section>
         <section>
           <p className="my-5 text-[1.953rem]">Course</p>
-          <div className="border-2 border-[#e4e4e4] hover:border-[#c7c7c7] bg-white rounded-lg inline-block p-5 shadow-none hover:shadow-[0px_4px_12px_rgba(0,0,0,0.1)]">
-            <img
-              className="w-[17rem] h-[12rem] object-cover mb-4 rounded-lg"
-              src="https://images.unsplash.com/photo-1614728263952-84ea256f9679?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1608&q=80"
+          <div className="w-fit grid grid-cols-[repeat(4,1fr)] gap-5 ">
+            <Courses
+              title="Classical mechanics"
+              img="https://images.unsplash.com/photo-1614728263952-84ea256f9679?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1608&q=80"
             />
-            <h1 className="font-bold text-[1.25rem]">Classical mechanics</h1>
+            <Courses />
+            <Courses />
+            <Courses />
           </div>
         </section>
       </main>
